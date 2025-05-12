@@ -4,16 +4,14 @@ const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
-
 app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
 app.use('/uploads', express.static('uploads'));
 
 // Routes
-app.use('/api/auth', require('./routes/auth'));
-app.use('/api/tickets', require('./routes/tickets'));
-
+app.use('/api/auth', require('./src/routes/auth'));
+app.use('/api/tickets', require('./src/routes/ticketRoutes'));
 // Swagger
 const swaggerUi = require('swagger-ui-express');
 const YAML = require('yamljs');

@@ -1,6 +1,6 @@
 const app = require('./app');
-const syncDb = require('./utils/syncDb');
-const PORT = process.env.PORT || 5000;
+const syncDb = require('./src/utils/syncDb');
+const PORT = process.env.PORT || 5342;
 
 syncDb().then(() => {
   app.listen(PORT, () => {

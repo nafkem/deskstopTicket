@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize');
-const sequelize = require('../config/database');
+const sequelize = require('../config/syncDb');
 const User = require('./User');
 
 const Agent = sequelize.define('Agent', {

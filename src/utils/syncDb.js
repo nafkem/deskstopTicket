@@ -1,5 +1,5 @@
-const sequelize = require('../config/database');
-const models = require('../models');
+const sequelize = require('../config/syncDb');
+//const models = require('../models');
 
 module.exports = async () => {
   try {

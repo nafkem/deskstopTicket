@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize');
-const sequelize = require('../config/database');
+const sequelize = require('../config/syncDb');
 
 const Category = sequelize.define('Category', {
   name: DataTypes.STRING,
